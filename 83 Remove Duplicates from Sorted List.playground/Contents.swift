@@ -29,7 +29,7 @@ class Solution {
         guard let head = head else { return nil }
         guard let nextNode = head.next else {return head}
         
-            if head.val != nextNode.val && nextNode != nil {
+            if head.val != nextNode.val {
                 deleteDuplicates(nextNode)
             }
             if head.val == nextNode.val {
